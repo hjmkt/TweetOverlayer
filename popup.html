@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/jquery.simplecolorpicker.css" />
+    <link rel="stylesheet" href="css/jquery.simplecolorpicker-regularfont.css">
+    <link rel="stylesheet" href="css/jquery.simplecolorpicker-glyphicons.css">
+    <link rel="stylesheet" href="css/jquery.simplecolorpicker-fontawesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-switch.min.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.simplecolorpicker.js"></script>
+    <script type="text/javascript" src="js/bootstrap-switch.min.js"></script>
+  </head>
+  <body>
+    <input id="commentSwitch" name="commentSwitch" type="checkbox" data-size="mini" data-off-text="OFF" data-on-text="ON" checked>
+    <select class="form-control" id="fontControl">
+      <option value="10">10px</option>
+      <option value="20">20px</option>
+      <option value="30">30px</option>
+      <option value="40">40px</option>
+      <option value="50">50px</option>
+    </select>
+    <select class="form-control" id="speedControl">
+      <option value="5">1コメント5秒表示</option>
+      <option value="10">1コメント10秒表示</option>
+      <option value="15">1コメント15秒表示</option>
+      <option value="20">1コメント20秒表示</option>
+      <option value="25">1コメント25秒表示</option>
+    </select>
+    <button type="button" class="btn btn-xs btn-primary" id="save">保存</button>
+
+    <br>
+    
+    <select id="palette" name="palette">
+      <option value="#f02020">Red</option>
+      <option value="#f04080">Pink</option>
+      <option value="#f08020">Orange</option>
+      <option value="#f0f020">Yellow</option>
+      <option value="#20c020">Green</option>
+      <option value="#2080f0">Blue</option>
+      <option value="#8020f0">Purple</option>
+      <option value="#f0f0f0">White</option>
+      <option value="#808080">Gray</option>
+      <option value="#202020">Black</option>
+    </select>
+    <select class="form-control" id="tpControl">
+      <option value="1">100%</option>
+      <option value="0.8">80%</option>
+      <option value="0.6">60%</option>
+      <option value="0.4">40%</option>
+      <option value="0.2">20%</option>
+    </select>
+
+    <br>
+
+    <input type="text" class="form-control" placeholder="キーワード" aria-describedby="basic-addon1" id="keyword">
+    <select class="form-control" id="updateRate">
+      <option value="100">100秒毎に更新</option>
+      <option value="30">30秒毎に更新</option>
+      <option value="10">10秒毎に更新</option>
+    </select>
+    <button type="button" class="btn btn-xs btn-primary" id="get">取得</button>
+
+    <script type="text/javascript" src="js/popup.js"></script>
+  </body>
+</html>
